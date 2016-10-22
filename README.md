@@ -29,4 +29,26 @@ final strategies:
 +---------+
 ```
 
+## nash_equilibria.py
+A (also quick and dirty) way to run the best-reply method to determine the Nash equilbrium strategies for a simple 2-player game with numerical payoffs represented in strategic form.
+
+To input the matrix of payoffs for the players, input an integer for the number of rows, and then input a line of values separated by spaces to represent the first row of payoffs for the first player. Do this for every row for the first player, and repeat the same procedure for the second player.
+
+The output are tuples of the payoffs that corresponding to the strategies that are Nash equilibria.
+
+**Example**:
+
+```
+enter number of rows for each payoff matrix: 2
+
+enter payoff row 0 for player 1: 3 2
+enter payoff row 1 for player 1: 4 8
+
+enter payoff row 0 for player 2: 3 0
+enter payoff row 1 for player 2: 1 -1
+
+nash equilibria: 
+[4, 1]
+```
+
 **Disclaimer**: This code is neither very efficient nor very robust, but hey, it works.
